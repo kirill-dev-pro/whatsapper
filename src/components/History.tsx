@@ -4,7 +4,7 @@ import { For } from 'solid-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
 
 export const History = () => {
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-unused-vars @ts-ignore
   const autoAnimate = createAutoAnimateDirective()
   return (
     <ul
@@ -23,7 +23,6 @@ export const History = () => {
       >
         {phone => <HistoryCard phone={phone} />}
       </For>
-      {/* <HistoryCard phone='123456789' /> */}
     </ul>
   )
 }
